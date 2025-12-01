@@ -32,7 +32,7 @@ const Skills = () => {
     {
       icon: Terminal,
       title: "Other Technologies",
-      skills: ["Machine Learning", "IoT", "System Programming", "Computer Vision"]
+      skills: ["Machine Learning", "Artificial Intelligence", "IoT", "System Programming", "Computer Vision", "Linux Commands"]
     }
   ];
 
