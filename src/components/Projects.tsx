@@ -10,37 +10,43 @@ const Projects = () => {
       title: "Vaultify - Private Digital Locker",
       description: "Secure document management system with multi-factor authentication. Features encrypted storage, trash management, and protected file handling for sensitive documents.",
       tags: ["Security", "React", "Authentication", "Cloud Storage"],
-      highlights: ["MFA Implementation", "Encrypted Storage", "Document Management"]
+      highlights: ["MFA Implementation", "Encrypted Storage", "Document Management"],
+      github: "https://github.com/Aksharaa-2/private-digital-lock.git"
     },
     {
       title: "Plant Disease Detection Chatbot",
       description: "AI-powered chatbot for identifying and diagnosing plant diseases, specifically optimized for tomato crops. Includes real-time disease prediction and treatment recommendations.",
       tags: ["Machine Learning", "Computer Vision", "Chatbot", "Agriculture"],
-      highlights: ["Disease Prediction", "Interactive Chat", "Treatment Suggestions"]
+      highlights: ["Disease Prediction", "Interactive Chat", "Treatment Suggestions"],
+      github: "#"
     },
     {
       title: "Self-Autonomous Car",
       description: "Autonomous vehicle simulation implementing self-driving algorithms and sensor integration for navigation and obstacle detection.",
       tags: ["IoT", "Computer Vision", "Embedded Systems"],
-      highlights: ["Autonomous Navigation", "Sensor Integration", "Real-time Processing"]
+      highlights: ["Autonomous Navigation", "Sensor Integration", "Real-time Processing"],
+      github: "https://github.com/Aksharaa-2/arduino_code.git"
     },
     {
       title: "Gmail OTP Verification System",
       description: "Secure email-based OTP verification system with time-limited codes. Implements robust authentication flow for user verification.",
       tags: ["Python", "Email Integration", "Security", "Backend"],
-      highlights: ["5-minute OTP validity", "Email Integration", "Secure Authentication"]
+      highlights: ["5-minute OTP validity", "Email Integration", "Secure Authentication"],
+      github: "https://github.com/Aksharaa-2/gmail_otp_verfication.git"
     },
     {
       title: "Soil Moisture Sensor with LED Indicator",
       description: "IoT-based soil monitoring system with visual LED indicators for moisture levels, helping optimize irrigation for plants.",
       tags: ["IoT", "Hardware", "Arduino", "Sensors"],
-      highlights: ["Real-time Monitoring", "LED Indicators", "Agriculture Tech"]
+      highlights: ["Real-time Monitoring", "LED Indicators", "Agriculture Tech"],
+      github: "https://github.com/Aksharaa-2/soil-moisture-sensor-with-led-indicator.git"
     },
     {
       title: "Mini-Shell Commands",
       description: "Custom command-line shell implementation with file operations including cd, ls, mkdir, cat, and cut commands for file management.",
       tags: ["Python", "System Programming", "CLI", "File System"],
-      highlights: ["File Operations", "Custom Commands", "Shell Interface"]
+      highlights: ["File Operations", "Custom Commands", "Shell Interface"],
+      github: "https://github.com/Aksharaa-2/minishell.git"
     }
   ];
 
@@ -98,12 +104,16 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-2">
-                  <Button size="sm" variant="secondary" className="flex-1">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    View Details
+                  <Button size="sm" variant="secondary" className="flex-1" asChild>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      View Details
+                    </a>
                   </Button>
-                  <Button size="sm" variant="secondary">
-                    <Github className="h-4 w-4" />
+                  <Button size="sm" variant="secondary" asChild>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github className="h-4 w-4" />
+                    </a>
                   </Button>
                 </div>
               </Card>

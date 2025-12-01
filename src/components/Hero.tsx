@@ -63,13 +63,26 @@ const Hero = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="flex flex-wrap gap-4 justify-center items-center"
           >
-            <Button size="lg" className="bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity shadow-glow">
-              <Mail className="mr-2 h-5 w-5" />
-              Get in Touch
+            <Button 
+              size="lg" 
+              className="bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity shadow-glow"
+              asChild
+            >
+              <a href="mailto:aksharaa692005@gmail.com">
+                <Mail className="mr-2 h-5 w-5" />
+                Get in Touch
+              </a>
             </Button>
-            <Button size="lg" variant="secondary" className="backdrop-blur-sm">
-              <Download className="mr-2 h-5 w-5" />
-              Download CV
+            <Button 
+              size="lg" 
+              variant="secondary" 
+              className="backdrop-blur-sm"
+              asChild
+            >
+              <a href="/Aksharaa_Resume.pdf" download="Aksharaa_S_Resume.pdf">
+                <Download className="mr-2 h-5 w-5" />
+                Download CV
+              </a>
             </Button>
           </motion.div>
 
@@ -79,13 +92,13 @@ const Hero = () => {
             transition={{ delay: 0.7, duration: 0.6 }}
             className="flex gap-6 justify-center mt-12"
           >
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            <a href="https://github.com/Aksharaa-2" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
               <Github className="h-6 w-6" />
             </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/aksharaa-s-2b7088289" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
               <Linkedin className="h-6 w-6" />
             </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            <a href="mailto:aksharaa692005@gmail.com" className="text-foreground hover:text-primary transition-colors">
               <Mail className="h-6 w-6" />
             </a>
           </motion.div>

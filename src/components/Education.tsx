@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { GraduationCap, Calendar } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 
 const Education = () => {
   return (
@@ -34,10 +34,6 @@ const Education = () => {
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-2">Bachelor of Technology in Computer Science (AI)</h3>
                   <p className="text-xl text-primary mb-3">Karunya Institute of Technology and Sciences</p>
-                  <div className="flex items-center gap-2 text-muted-foreground mb-4">
-                    <Calendar className="h-4 w-4" />
-                    <span>2023 - 2026 (Expected)</span>
-                  </div>
                   <p className="text-muted-foreground leading-relaxed">
                     Pursuing a comprehensive education in computer science with focus on Artificial Intelligence,
                     software development, algorithms, data structures, and emerging technologies. Active participant 
@@ -70,10 +66,6 @@ const Education = () => {
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-2">Diploma in Computer Applications</h3>
                   <p className="text-xl text-primary mb-3">Bharathidasan University</p>
-                  <div className="flex items-center gap-2 text-muted-foreground mb-4">
-                    <Calendar className="h-4 w-4" />
-                    <span>Completed: April 2023</span>
-                  </div>
                   <p className="text-muted-foreground leading-relaxed">
                     Completed diploma with focus on entrepreneurship and career development. 
                     Built foundational knowledge in computer applications and business management.

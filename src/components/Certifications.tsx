@@ -12,52 +12,59 @@ const Certifications = () => {
         { name: "C Essentials 1", year: "2024" },
         { name: "C Essentials 2", year: "2024" }
       ],
-      color: "from-blue-500 to-blue-600"
+      color: "from-blue-500 to-blue-600",
+      link: "#"
     },
     {
       provider: "Infosys Springboard",
       certificates: [
-        { name: "Data-Level Parallelism", year: "2024" },
-        { name: "Introduction to Computer Architecture", year: "2024" },
-        { name: "Instruction Parallelism", year: "2024" }
+        { name: "Data-Level Parallelism", year: "2025" },
+        { name: "Introduction to Computer Architecture", year: "2025" },
+        { name: "Instruction Parallelism", year: "2025" }
       ],
-      color: "from-purple-500 to-purple-600"
+      color: "from-purple-500 to-purple-600",
+      link: "#"
     },
     {
       provider: "Microsoft",
       certificates: [
-        { name: "Microsoft Azure Fundamentals", year: "2024" },
-        { name: "Microsoft Cloud Badge", year: "2024" }
+        { name: "Microsoft Azure Fundamentals", year: "2025" },
+        { name: "Microsoft Cloud Badge", year: "2025" }
       ],
-      color: "from-cyan-500 to-cyan-600"
+      color: "from-cyan-500 to-cyan-600",
+      link: "#"
     },
     {
       provider: "Snowflake",
       certificates: [
-        { name: "Snowflake Certification", year: "2024" }
+        { name: "Snowflake Certification", year: "2025" }
       ],
-      color: "from-teal-500 to-teal-600"
+      color: "from-teal-500 to-teal-600",
+      link: "#"
     },
     {
       provider: "Kaggle",
       certificates: [
-        { name: "Introduction to Programming", year: "2024" }
+        { name: "Introduction to Programming", year: "2025" }
       ],
-      color: "from-blue-400 to-blue-500"
+      color: "from-blue-400 to-blue-500",
+      link: "#"
     },
     {
       provider: "Simplilearn",
       certificates: [
-        { name: "Professional Certificate", year: "2024" }
+        { name: "Professional Certificate", year: "2025" }
       ],
-      color: "from-orange-500 to-orange-600"
+      color: "from-orange-500 to-orange-600",
+      link: "#"
     },
     {
       provider: "IBM",
       certificates: [
-        { name: "IBM Professional Certificate", year: "2024" }
+        { name: "IBM Professional Certificate", year: "2025" }
       ],
-      color: "from-indigo-500 to-indigo-600"
+      color: "from-indigo-500 to-indigo-600",
+      link: "#"
     }
   ];
 
@@ -110,9 +117,11 @@ const Certifications = () => {
                   ))}
                 </div>
 
-                <Button size="sm" variant="secondary" className="w-full">
-                  <ExternalLink className="h-4 w-4 mr-2" />
-                  View Certificates
+                <Button size="sm" variant="secondary" className="w-full" asChild>
+                  <a href={cert.link} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="h-4 w-4 mr-2" />
+                    View Certificates
+                  </a>
                 </Button>
               </Card>
             </motion.div>
