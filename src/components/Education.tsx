@@ -19,38 +19,70 @@ const Education = () => {
           <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full" />
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <Card className="p-8 bg-gradient-card border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-card">
-            <div className="flex items-start gap-6">
-              <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <GraduationCap className="h-8 w-8 text-primary" />
-              </div>
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-2">Bachelor of Technology in Computer Science</h3>
-                <p className="text-xl text-primary mb-3">Karunya Institute of Technology and Sciences</p>
-                <div className="flex items-center gap-2 text-muted-foreground mb-4">
-                  <Calendar className="h-4 w-4" />
-                  <span>Expected Graduation: 2026</span>
+        <div className="space-y-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <Card className="p-8 bg-gradient-card border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-card">
+              <div className="flex items-start gap-6">
+                <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <GraduationCap className="h-8 w-8 text-primary" />
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  Pursuing a comprehensive education in computer science with focus on software development,
-                  algorithms, data structures, and emerging technologies. Active participant in hackathons
-                  and technical events, consistently working on innovative projects.
-                </p>
-                <div className="mt-4">
-                  <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
-                    Roll No: URK24CS5018
-                  </span>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-2">Bachelor of Technology in Computer Science (AI)</h3>
+                  <p className="text-xl text-primary mb-3">Karunya Institute of Technology and Sciences</p>
+                  <div className="flex items-center gap-2 text-muted-foreground mb-4">
+                    <Calendar className="h-4 w-4" />
+                    <span>2023 - 2026 (Expected)</span>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Pursuing a comprehensive education in computer science with focus on Artificial Intelligence,
+                    software development, algorithms, data structures, and emerging technologies. Active participant 
+                    in hackathons and technical events, consistently working on innovative projects.
+                  </p>
+                  <div className="flex gap-2 mt-4 flex-wrap">
+                    <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                      CGPA: 8.79
+                    </span>
+                    <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                      Roll No: URK24CS5018
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Card>
-        </motion.div>
+            </Card>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <Card className="p-8 bg-gradient-card border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-card">
+              <div className="flex items-start gap-6">
+                <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <GraduationCap className="h-8 w-8 text-primary" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-2">Diploma in Computer Applications</h3>
+                  <p className="text-xl text-primary mb-3">Bharathidasan University</p>
+                  <div className="flex items-center gap-2 text-muted-foreground mb-4">
+                    <Calendar className="h-4 w-4" />
+                    <span>Completed: April 2023</span>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Completed diploma with focus on entrepreneurship and career development. 
+                    Built foundational knowledge in computer applications and business management.
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
