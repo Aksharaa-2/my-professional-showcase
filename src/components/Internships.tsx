@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { Briefcase, Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Briefcase, Calendar, ExternalLink } from "lucide-react";
 
 const Internships = () => {
   return (
@@ -47,10 +48,16 @@ const Internships = () => {
                   technical skills in a professional environment.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-4">
                 <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">Python</span>
                 <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">Development</span>
               </div>
+              <Button size="sm" variant="secondary" className="w-full" asChild>
+                <a href="user-uploads://Akshara_Internship_Certificate_1.pdf" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="h-4 w-4 mr-2" />
+                  View Certificate
+                </a>
+              </Button>
             </Card>
           </motion.div>
 
