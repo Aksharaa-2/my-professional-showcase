@@ -9,11 +9,10 @@ const Certifications = () => {
     {
       provider: "Cisco",
       certificates: [
-        { name: "C Programming Essentials 1", year: "2024" },
-        { name: "C Programming Essentials 2", year: "2024" }
+        { name: "C Programming Essentials 1", year: "2024", url: "/certificates/cisco-c-essentials-1.jpeg" },
+        { name: "C Programming Essentials 2", year: "2024", url: "/certificates/cisco-c-essentials-2.jpeg" }
       ],
       color: "from-blue-500 to-blue-600",
-      link: "/certificates/cisco-c-essentials-1.jpeg"
     },
     {
       provider: "Infosys Springboard",
@@ -23,7 +22,6 @@ const Certifications = () => {
         { name: "Instruction Parallelism", year: "2025" }
       ],
       color: "from-purple-500 to-purple-600",
-      link: "#"
     },
     {
       provider: "Microsoft",
@@ -32,7 +30,6 @@ const Certifications = () => {
         { name: "Microsoft Cloud Badge", year: "2025" }
       ],
       color: "from-cyan-500 to-cyan-600",
-      link: "#"
     },
     {
       provider: "Snowflake",
@@ -40,7 +37,6 @@ const Certifications = () => {
         { name: "Snowflake Certification", year: "2025" }
       ],
       color: "from-teal-500 to-teal-600",
-      link: "#"
     },
     {
       provider: "Kaggle",
@@ -48,7 +44,6 @@ const Certifications = () => {
         { name: "Introduction to Programming", year: "2025" }
       ],
       color: "from-blue-400 to-blue-500",
-      link: "#"
     },
     {
       provider: "Simplilearn",
@@ -56,7 +51,6 @@ const Certifications = () => {
         { name: "Professional Certificate", year: "2025" }
       ],
       color: "from-orange-500 to-orange-600",
-      link: "#"
     },
     {
       provider: "IBM",
@@ -64,7 +58,6 @@ const Certifications = () => {
         { name: "IBM Professional Certificate", year: "2025" }
       ],
       color: "from-indigo-500 to-indigo-600",
-      link: "#"
     }
   ];
 
@@ -110,19 +103,25 @@ const Certifications = () => {
 
                 <div className="space-y-2 mb-4">
                   {cert.certificates.map((certificate) => (
-                    <div key={certificate.name} className="flex items-center justify-between p-3 rounded-lg bg-secondary/30 hover:bg-secondary/50 transition-colors">
-                      <span className="text-sm font-medium">{certificate.name}</span>
-                      <span className="text-xs text-muted-foreground">{certificate.year}</span>
+                    <div
+                      key={certificate.name}
+                      className="flex items-center justify-between p-3 rounded-lg bg-secondary/30 hover:bg-secondary/50 transition-colors"
+                    >
+                      <div>
+                        <span className="text-sm font-medium block">{certificate.name}</span>
+                        <span className="text-xs text-muted-foreground block mt-0.5">{certificate.year}</span>
+                      </div>
+                      {"url" in certificate && certificate.url && (
+                        <Button size="icon" variant="secondary" asChild>
+                          <a href={certificate.url} rel="noopener noreferrer">
+                            <ExternalLink className="h-4 w-4" />
+                            <span className="sr-only">View {certificate.name} certificate</span>
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   ))}
                 </div>
-
-                <Button size="sm" variant="secondary" className="w-full" asChild>
-                  <a href={cert.link} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    View Certificates
-                  </a>
-                </Button>
               </Card>
             </motion.div>
           ))}
