@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { Code, BookOpen, Music, Gamepad2, Camera, Palette } from "lucide-react";
+import { Code, BookOpen, Gamepad2 } from "lucide-react";
 
 const Hobbies = () => {
   const hobbies = [
@@ -15,24 +15,9 @@ const Hobbies = () => {
       description: "Tech blogs, documentation, and science fiction novels"
     },
     {
-      icon: Music,
-      title: "Music",
-      description: "Listening to various genres while coding"
-    },
-    {
       icon: Gamepad2,
       title: "Gaming",
       description: "Strategy games and puzzle-solving challenges"
-    },
-    {
-      icon: Camera,
-      title: "Photography",
-      description: "Capturing technology and nature moments"
-    },
-    {
-      icon: Palette,
-      title: "Design",
-      description: "UI/UX exploration and creative visual projects"
     }
   ];
 
