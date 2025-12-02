@@ -13,7 +13,7 @@ const Certifications = () => {
         { name: "C Programming Essentials 2", year: "2024" }
       ],
       color: "from-blue-500 to-blue-600",
-      link: "user-uploads://WhatsApp_Image_2025-12-01_at_11.52.05_PM_1.jpeg"
+      link: "/certificates/cisco-c-essentials-1.jpeg"
     },
     {
       provider: "Infosys Springboard",
@@ -23,7 +23,7 @@ const Certifications = () => {
         { name: "Instruction Parallelism", year: "2025" }
       ],
       color: "from-purple-500 to-purple-600",
-      link: "user-uploads://WhatsApp_Image_2025-12-01_at_11.52.05_PM.jpeg"
+      link: "#"
     },
     {
       provider: "Microsoft",
@@ -32,7 +32,7 @@ const Certifications = () => {
         { name: "Microsoft Cloud Badge", year: "2025" }
       ],
       color: "from-cyan-500 to-cyan-600",
-      link: "user-uploads://WhatsApp_Image_2025-12-01_at_11.52.05_PM.jpeg"
+      link: "#"
     },
     {
       provider: "Snowflake",
@@ -40,7 +40,7 @@ const Certifications = () => {
         { name: "Snowflake Certification", year: "2025" }
       ],
       color: "from-teal-500 to-teal-600",
-      link: "user-uploads://WhatsApp_Image_2025-12-01_at_11.52.05_PM.jpeg"
+      link: "#"
     },
     {
       provider: "Kaggle",
@@ -48,7 +48,7 @@ const Certifications = () => {
         { name: "Introduction to Programming", year: "2025" }
       ],
       color: "from-blue-400 to-blue-500",
-      link: "user-uploads://WhatsApp_Image_2025-12-01_at_11.52.05_PM.jpeg"
+      link: "#"
     },
     {
       provider: "Simplilearn",
@@ -56,7 +56,7 @@ const Certifications = () => {
         { name: "Professional Certificate", year: "2025" }
       ],
       color: "from-orange-500 to-orange-600",
-      link: "user-uploads://WhatsApp_Image_2025-12-01_at_11.52.05_PM.jpeg"
+      link: "#"
     },
     {
       provider: "IBM",
@@ -64,7 +64,7 @@ const Certifications = () => {
         { name: "IBM Professional Certificate", year: "2025" }
       ],
       color: "from-indigo-500 to-indigo-600",
-      link: "user-uploads://WhatsApp_Image_2025-12-01_at_11.52.05_PM.jpeg"
+      link: "#"
     }
   ];
 

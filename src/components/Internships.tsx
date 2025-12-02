@@ -53,7 +53,7 @@ const Internships = () => {
                 <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">Development</span>
               </div>
               <Button size="sm" variant="secondary" className="w-full" asChild>
-                <a href="user-uploads://Akshara_Internship_Certificate_1.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/certificates/python-internship.pdf" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="h-4 w-4 mr-2" />
                   View Certificate
                 </a>
@@ -88,10 +88,16 @@ const Internships = () => {
                   gained practical knowledge in a professional cybersecurity environment.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-4">
                 <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">Cybersecurity</span>
                 <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">Network Security</span>
               </div>
+              <Button size="sm" variant="secondary" className="w-full" asChild>
+                <a href="/certificates/cybersecurity-internship.pdf" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="h-4 w-4 mr-2" />
+                  View Certificate
+                </a>
+              </Button>
             </Card>
           </motion.div>
         </div>

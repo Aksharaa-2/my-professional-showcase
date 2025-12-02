@@ -16,21 +16,25 @@ const Footer = () => {
 
           <div className="flex gap-6">
             <a 
-              href="#" 
+              href="https://github.com/Aksharaa-2" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary/20 flex items-center justify-center transition-all duration-300 hover:scale-110"
               aria-label="GitHub"
             >
               <Github className="h-5 w-5" />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/aksharaa-s-2b7088289" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary/20 flex items-center justify-center transition-all duration-300 hover:scale-110"
               aria-label="LinkedIn"
             >
               <Linkedin className="h-5 w-5" />
             </a>
             <a 
-              href="#" 
+              href="mailto:aksharaa692005@gmail.com" 
               className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary/20 flex items-center justify-center transition-all duration-300 hover:scale-110"
               aria-label="Email"
             >
