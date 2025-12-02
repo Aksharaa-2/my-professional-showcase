@@ -17,8 +17,6 @@ const Footer = () => {
           <div className="flex gap-6">
             <a 
               href="https://github.com/Aksharaa-2" 
-              target="_blank"
-              rel="noopener noreferrer"
               className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary/20 flex items-center justify-center transition-all duration-300 hover:scale-110"
               aria-label="GitHub"
             >
@@ -26,8 +24,6 @@ const Footer = () => {
             </a>
             <a 
               href="https://www.linkedin.com/in/aksharaa-s-2b7088289" 
-              target="_blank"
-              rel="noopener noreferrer"
               className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary/20 flex items-center justify-center transition-all duration-300 hover:scale-110"
               aria-label="LinkedIn"
             >
