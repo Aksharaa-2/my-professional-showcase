@@ -53,7 +53,7 @@ const Internships = () => {
                 <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">Development</span>
               </div>
               <Button size="sm" variant="secondary" className="w-full" asChild>
-                <a href="/certificates/python-internship.pdf" rel="noopener noreferrer">
+                <a href="/certificates/python-internship.jpeg" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="h-4 w-4 mr-2" />
                   View Certificate
                 </a>

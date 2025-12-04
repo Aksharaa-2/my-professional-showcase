@@ -26,7 +26,7 @@ const Certifications = () => {
     {
       provider: "Microsoft",
       certificates: [
-        { name: "Microsoft Azure Fundamentals", year: "2025" },
+        { name: "Microsoft AI Badge", year: "2025", url: "/certificates/microsoft-ai-badge.pdf" },
         { name: "Microsoft Cloud Badge", year: "2025", url: "/certificates/microsoft-cloud-badge.pdf" }
       ],
       color: "from-cyan-500 to-cyan-600",
@@ -55,7 +55,7 @@ const Certifications = () => {
     {
       provider: "IBM",
       certificates: [
-        { name: "IBM Professional Certificate", year: "2025" }
+        { name: "IBM Professional Certificate", year: "2025", url: "/certificates/ibm-certificate.pdf" }
       ],
       color: "from-indigo-500 to-indigo-600",
     }
