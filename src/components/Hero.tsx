@@ -95,7 +95,7 @@ const Hero = () => {
             <a href="https://github.com/Aksharaa-2" className="text-foreground hover:text-primary transition-colors">
               <Github className="h-6 w-6" />
             </a>
-            <a href="https://www.linkedin.com/in/aksharaa-s-2b7088289" className="text-foreground hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/aksharaa-s-7552b5364" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
               <Linkedin className="h-6 w-6" />
             </a>
             <a href="mailto:aksharaa692005@gmail.com" className="text-foreground hover:text-primary transition-colors">

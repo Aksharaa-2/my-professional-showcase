@@ -23,7 +23,9 @@ const Footer = () => {
               <Github className="h-5 w-5" />
             </a>
             <a 
-              href="https://www.linkedin.com/in/aksharaa-s-2b7088289" 
+              href="https://www.linkedin.com/in/aksharaa-s-7552b5364" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-lg bg-secondary hover:bg-primary/20 flex items-center justify-center transition-all duration-300 hover:scale-110"
               aria-label="LinkedIn"
             >
