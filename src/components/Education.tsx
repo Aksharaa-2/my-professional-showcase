@@ -43,9 +43,6 @@ const Education = () => {
                     <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
                       CGPA: 8.79
                     </span>
-                    <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
-                      Roll No: URK24CS5018
-                    </span>
                   </div>
                 </div>
               </div>
