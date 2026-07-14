@@ -79,7 +79,7 @@ const Hero = () => {
               className="backdrop-blur-sm"
               asChild
             >
-              <a href="/Aksharaa_Resume.pdf" download="Aksharaa_S_Resume.pdf">
+              <a href="/Aksharaa_Resume.pdf" download="Aksharaa_S_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 h-5 w-5" />
                 Download CV
               </a>
