@@ -58,6 +58,14 @@ const Certifications = () => {
         { name: "IBM Professional Certificate", year: "2025", url: "/certificates/ibm-certificate.pdf" }
       ],
       color: "from-indigo-500 to-indigo-600",
+    },
+    {
+      provider: "Google",
+      certificates: [
+        { name: "Google Ad Apps Certification", year: "2025", url: "/certificates/google-ad-apps.pdf" },
+        { name: "Fundamentals of Digital Marketing - Google Digital Garage", year: "2025", url: "/certificates/google-digital-marketing.pdf" }
+      ],
+      color: "from-green-500 to-green-600",
     }
   ];
 

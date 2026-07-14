@@ -47,6 +47,27 @@ const Projects = () => {
       tags: ["Python", "System Programming", "CLI", "File System"],
       highlights: ["File Operations", "Custom Commands", "Shell Interface"],
       github: "https://github.com/Aksharaa-2/minishell.git"
+    },
+    {
+      title: "SEO-A-B-TESTING-SIMULATOR",
+      description: "A simulator for running SEO A/B tests to measure the impact of on-page changes on search performance and user engagement metrics.",
+      tags: ["SEO", "A/B Testing", "Analytics", "Simulation"],
+      highlights: ["Test Variant Simulation", "Performance Metrics", "SEO Insights"],
+      github: "https://github.com/Aksharaa-2/SEO-A-B-TESTING-SIMULATOR-"
+    },
+    {
+      title: "UI-AND-UX-AWARE-SEO-OPTIMIZATION-SYSTEM",
+      description: "SEO optimization system that integrates UI/UX signals to improve rankings while preserving user experience quality.",
+      tags: ["SEO", "UI/UX", "Optimization", "Web"],
+      highlights: ["UX-aware Scoring", "SEO Recommendations", "Holistic Optimization"],
+      github: "https://github.com/Aksharaa-2/UI-AND-UX-AWARE-SEO-OPTIMIZATION-SYSTEM"
+    },
+    {
+      title: "seo-cloaking-detection-using-dual-web-scraping-and-semantic-analysis",
+      description: "Detects SEO cloaking by comparing content served to bots vs users using dual web scraping combined with semantic analysis techniques.",
+      tags: ["SEO", "Web Scraping", "NLP", "Security"],
+      highlights: ["Dual Scraping", "Semantic Comparison", "Cloaking Detection"],
+      github: "https://github.com/Aksharaa-2/seo-cloaking-detection-using-dual-web-scraping-and-seantic-analysis"
     }
   ];
 

@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { Code, Database, Cloud, Cpu, Terminal, Layers } from "lucide-react";
+import { Code, Database, Cloud, Briefcase, Terminal, Layers } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
       icon: Code,
       title: "Programming Languages",
-      skills: ["C", "Python", "Java", "JavaScript", "TypeScript"]
+      skills: ["C", "Python", "JavaScript", "R (Basics)"]
     },
     {
       icon: Layers,
@@ -22,12 +22,12 @@ const Skills = () => {
     {
       icon: Cloud,
       title: "Cloud & Tools",
-      skills: ["Snowflake", "Microsoft Azure", "Git", "GitHub"]
+      skills: ["Snowflake", "Git", "GitHub"]
     },
     {
-      icon: Cpu,
-      title: "Computer Architecture",
-      skills: ["Parallel Processing", "Data-Level Parallelism", "Instruction Parallelism"]
+      icon: Briefcase,
+      title: "Project Management Tools & Methodologies",
+      skills: ["Agile (Kanban, Scrum)", "Jira", "Confluence", "Documentation (BRD, FRD)", "PowerBI"]
     },
     {
       icon: Terminal,
