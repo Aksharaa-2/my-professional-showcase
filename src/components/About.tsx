@@ -45,9 +45,7 @@ const About = () => {
           className="text-center mb-12"
         >
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm a dedicated Computer Science student at Karunya Institute with a passion for innovation and technology.
-            My journey in software development has led me to participate in prestigious hackathons like Smart India Hackathon,
-            and work on diverse projects ranging from autonomous systems to secure digital solutions.
+            Enthusiastic CSE(AI) student with a strong foundation in Python, MySQL, Agile methodologies (Scrum, Kanban), Jira, Confluence and technical documentation (BRD, FRD). Passionate about bridging technology and businesses by coordinating projects, managing requirements and collaborating with cross-functional teams. Eager to contribute as Technical Program Manager Trainee by leveraging technical knowledge, leadership potential, and analytical thinking to support project execution and deliver business value.
           </p>
         </motion.div>
 
