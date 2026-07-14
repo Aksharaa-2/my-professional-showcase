@@ -100,6 +100,43 @@ const Internships = () => {
               </Button>
             </Card>
           </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <Card className="p-8 bg-gradient-card border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-card h-full">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center flex-shrink-0">
+                  <Briefcase className="h-7 w-7 text-white" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold mb-1">Business Analyst Internship</h3>
+                  <p className="text-primary font-semibold">Certified Program</p>
+                </div>
+              </div>
+              <div className="space-y-3 mb-4">
+                <p className="text-muted-foreground leading-relaxed">
+                  Completed a Business Analyst internship focused on requirement gathering, stakeholder communication,
+                  and preparing BRDs/FRDs. Applied Agile practices with Jira and Confluence to support project execution
+                  and translate business needs into actionable technical requirements.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">Business Analysis</span>
+                <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">Agile</span>
+                <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">Documentation</span>
+              </div>
+              <Button size="sm" variant="secondary" className="w-full" asChild>
+                <a href="/certificates/business-analyst-internship.pdf" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="h-4 w-4 mr-2" />
+                  View Certificate
+                </a>
+              </Button>
+            </Card>
+          </motion.div>
         </div>
       </div>
     </section>
