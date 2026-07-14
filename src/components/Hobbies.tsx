@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { Code, BookOpen, Gamepad2 } from "lucide-react";
+import { Code, BookOpen, PenLine, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Hobbies = () => {
   const hobbies = [
@@ -15,9 +16,20 @@ const Hobbies = () => {
       description: "Tech blogs, documentation, and science fiction novels"
     },
     {
-      icon: Gamepad2,
-      title: "Gaming",
-      description: "Strategy games and puzzle-solving challenges"
+      icon: PenLine,
+      title: "Blogging",
+      description: "Writing about SEO, search technology, and modern web trends"
+    }
+  ];
+
+  const blogs = [
+    {
+      title: "Neural Search VS Traditional Search Why Modern Seo Is No Longer Just About Keywords",
+      url: "https://medium.com/@aksharaasathya/neural-search-vs-traditional-search-why-modern-seo-is-no-longer-just-about-keywords-190d0e6d33a1"
+    },
+    {
+      title: "Seo Is Not Just Ranking Its Digital Trust",
+      url: "https://modern-seo-talks.blogspot.com/2026/06/seo-is-not-just-ranking-its-digital.html"
     }
   ];
 
@@ -37,7 +49,7 @@ const Hobbies = () => {
           <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full" />
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
           {hobbies.map((hobby, index) => (
             <motion.div
               key={hobby.title}
@@ -58,6 +70,32 @@ const Hobbies = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h3 className="text-2xl font-bold text-center mb-6">My Blogs</h3>
+          <div className="grid md:grid-cols-2 gap-4">
+            {blogs.map((blog) => (
+              <Card key={blog.url} className="p-5 bg-gradient-card border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-card group">
+                <div className="flex items-start justify-between gap-4">
+                  <h4 className="font-semibold group-hover:text-primary transition-colors leading-snug">
+                    {blog.title}
+                  </h4>
+                  <Button size="icon" variant="secondary" asChild className="flex-shrink-0">
+                    <a href={blog.url} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="h-4 w-4" />
+                      <span className="sr-only">Read {blog.title}</span>
+                    </a>
+                  </Button>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
